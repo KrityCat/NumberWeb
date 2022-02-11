@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NumberWeb</title>
-    <link rel="stylesheet" href="css/body.css" type="text/css">
-    <script src="js/body.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/body.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/alert.js"></script>
 </head>
 <body>
     <div>
@@ -16,5 +20,15 @@
         <button onclick="NumberTest()">确定</button>
         <p id="sure"></p>
     </div>
+
+    <div class="container">
+        <h4>模拟数据查询，查询失败显示一个模态框，1.2秒后自动消失</h4>
+        <button type="button" class="btn" onclick="test('alert-danger')">查询失败</button>
+        <button type="button" class="btn" onclick="test('alert-success')">成功</button>
+        <button type="button" class="btn" onclick="test('alert_warning')">警告</button>
+        <button type="button" class="btn" onclick="test('alert_info')">信息提示</button>
+        <button type="button" class="btn" onclick="test('alert_info2')">信息提示2</button>
+    </div>
+
 </body>
 </html>
